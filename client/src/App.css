@@ -1,0 +1,94 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.App {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+.project-selector {
+  margin-bottom: 20px;
+}
+
+.project-selector select {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.project-summary {
+  margin-bottom: 20px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.summary-item {
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.summary-item h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.visualizations {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stage-network, .stage-chart {
+  flex-basis: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.legend {
+  margin-top: 20px;
+}
+
+.legend ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.legend li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .stage-network, .stage-chart {
+    flex-basis: 100%;
+  }
+}
+
+.stage-chart select {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}

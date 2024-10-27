@@ -1,0 +1,181 @@
+[
+  {
+    "id": "1",
+    "projectName": "Project A",
+    "stages": [
+      {
+        "name": "Vision Scoping",
+        "timeSpent": "3.5",
+        "timeElapsed": "4",
+        "moneySpent": "100",
+        "rejections": 5,
+        "parent": null,
+        "children": ["Release Planning"],
+        "leftSibling": null,
+        "rightSibling": null
+      },
+      {
+        "name": "Release Planning",
+        "timeSpent": "7",
+        "timeElapsed": "8",
+        "moneySpent": "150",
+        "rejections": 10,
+        "parent": "Vision Scoping",
+        "children": ["Release 1", "Release 2"],
+        "leftSibling": null,
+        "rightSibling": null
+      },
+      {
+        "name": "Release 1",
+        "timeSpent": "9",
+        "timeElapsed": "10",
+        "moneySpent": "200",
+        "rejections": 15,
+        "parent": "Release Planning",
+        "children": ["Development", "Testing"],
+        "leftSibling": null,
+        "rightSibling": "Release 2"
+      },
+      {
+        "name": "Development",
+        "timeSpent": "5",
+        "timeElapsed": "6",
+        "moneySpent": "120",
+        "rejections": 8,
+        "parent": "Release 1",
+        "children": [],
+        "leftSibling": null,
+        "rightSibling": "Testing"
+      },
+      {
+        "name": "Testing",
+        "timeSpent": "4",
+        "timeElapsed": "5",
+        "moneySpent": "80",
+        "rejections": 3,
+        "parent": "Release 1",
+        "children": [],
+        "leftSibling": "Development",
+        "rightSibling": null
+      },
+      {
+        "name": "Release 2",
+        "timeSpent": "6",
+        "timeElapsed": "7",
+        "moneySpent": "150",
+        "rejections": 5,
+        "parent": "Release Planning",
+        "children": ["Development", "Testing"],
+        "leftSibling": "Release 1",
+        "rightSibling": null
+      }
+    ],
+    "summary": {
+      "totalTimeSpent": "34.5",
+      "timeElapsed": "40",
+      "moneySpent": "800",
+      "rejections": 46
+    }
+  },
+  {
+    "id": "2",
+    "projectName": "Project B",
+    "stages": [
+      {
+        "name": "Phase 1",
+        "timeSpent": "5",
+        "timeElapsed": "6",
+        "moneySpent": "200",
+        "rejections": 3,
+        "parent": null,
+        "children": ["Phase 2"],
+        "leftSibling": null,
+        "rightSibling": "Phase 2"
+      },
+      {
+        "name": "Phase 2",
+        "timeSpent": "8",
+        "timeElapsed": "9",
+        "moneySpent": "300",
+        "rejections": 7,
+        "parent": "Phase 1",
+        "children": ["Phase 3"],
+        "leftSibling": "Phase 1",
+        "rightSibling": "Phase 3"
+      },
+      {
+        "name": "Phase 3",
+        "timeSpent": "6",
+        "timeElapsed": "7",
+        "moneySpent": "250",
+        "rejections": 5,
+        "parent": "Phase 2",
+        "children": [],
+        "leftSibling": "Phase 2",
+        "rightSibling": null
+      }
+    ],
+    "summary": {
+      "totalTimeSpent": "19",
+      "timeElapsed": "22",
+      "moneySpent": "750",
+      "rejections": 15
+    }
+  },
+  {
+    "id": "3",
+    "projectName": "Project C",
+    "stages": [
+      {
+        "name": "Initiation",
+        "timeSpent": "4",
+        "timeElapsed": "5",
+        "moneySpent": "150",
+        "rejections": 2,
+        "parent": null,
+        "children": ["Planning"],
+        "leftSibling": null,
+        "rightSibling": "Planning"
+      },
+      {
+        "name": "Planning",
+        "timeSpent": "7",
+        "timeElapsed": "8",
+        "moneySpent": "250",
+        "rejections": 4,
+        "parent": "Initiation",
+        "children": ["Execution"],
+        "leftSibling": "Initiation",
+        "rightSibling": "Execution"
+      },
+      {
+        "name": "Execution",
+        "timeSpent": "10",
+        "timeElapsed": "12",
+        "moneySpent": "400",
+        "rejections": 6,
+        "parent": "Planning",
+        "children": ["Closure"],
+        "leftSibling": "Planning",
+        "rightSibling": "Closure"
+      },
+      {
+        "name": "Closure",
+        "timeSpent": "3",
+        "timeElapsed": "4",
+        "moneySpent": "100",
+        "rejections": 1,
+        "parent": "Execution",
+        "children": [],
+        "leftSibling": "Execution",
+        "rightSibling": null
+      }
+    ],
+    "summary": {
+      "totalTimeSpent": "24",
+      "timeElapsed": "29",
+      "moneySpent": "900",
+      "rejections": 13
+    }
+  }
+]

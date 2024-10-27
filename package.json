@@ -1,0 +1,13 @@
+{
+  "name": "process-inspector",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && PORT=3000 npm start",
+    "server": "cd server && PORT=3001 npm start",
+    "dev": "npm run server & npm run client",
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "test": "cd server && npm test && cd ../client && npm test"
+  }
+}
