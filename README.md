@@ -40,8 +40,8 @@ process-inspector/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd process-inspector
+git clone <https://github.com/hsb3/operational-stats-visualizer>
+cd operational-stats-visualizer
 ```
 
 2. Install dependencies:
